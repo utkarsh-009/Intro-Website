@@ -16,21 +16,83 @@
         padding: 0px;
         background: url(img/bg.jpg);
         background-repeat: no-repeat;
-        background-size: 1540px 750px;
+        background-size: 1600px 1000px;
         /* background-size: cover; */
         /* height: 800px; */
     }
 
+    /* CSS for Left Box */
     .left {
+        position: absolute;
+        left: 35px;
+        top: 14px;
+        display: inline-block;
         border: 2px solid red;
     }
 
+    /* CSS for Mid Box */
     .mid {
+
+        display: block;
+        width: 40%;
+        margin: 12px auto;
         border: 2px solid red;
     }
 
+    /* CSS for Right Box */
     .right {
+        position: absolute;
+        right: 35px;
+        top: 14px;
+        display: inline-block;
         border: 2px solid red;
+    }
+
+    .navbar {
+        display: inline-block;
+        width: 900px;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 20px 20px;
+    }
+
+    .navbar li a:hover {
+        text-decoration: solid;
+        color: gray;
+    }
+
+    .navbar li a.active {
+        text-decoration: underline;
+        color: gray;
+    }
+
+    .left img {
+        width: 100px;
+
+    }
+
+    .left div {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .mid .hometext {
+        display: inline-block;
+        height: 100px;
+        width: 45%;
+        position: absolute;
+        top: 300px;
+        border: 2px solid red;
+        font-size: 25px;
+        text-align: center;
     }
 </style>
 
@@ -38,18 +100,32 @@
     <header class="header">
         <!-- Left Box for LOGO -->
         <div class="left">
-            LEFT
+            <img src="img/logo.jpg" alt="">
+            <div>Utkarsh Patil</div>
         </div>
 
         <!-- Mid Box for Nav Bar -->
         <div class="mid">
-            MID
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Coding</a></li>
+                <li><a href="#">Football</a></li>
+                <li><a href="#">Anime</a></li>
+            </ul>
+            <div class="hometext">
+                Hi and welcome! This site is about me.
+                My name is Utkarsh Patil.
+                I like to code. Apart from that i love Video games, Football, Anime.
+            </div>
         </div>
 
         <!-- Right Box for Buttons -->
         <div class="right">
             RIGHT
         </div>
+
+
     </header>
 </body>
 
