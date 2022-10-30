@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ask Me Anything</title>
+    <title>About Me</title>
 </head>
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
@@ -96,36 +96,48 @@
         background-color: rgb(32, 32, 32);
     }
 
-    .container {
-
-        border: 2px solid green;
-        margin: 60px auto;
-        padding: 50px;
-        width: 33%;
-        border-radius: 25px;
+    .aboutmebox {
+        border: 2px solid gray;
         border-color: white;
-    }
-
-    .form-grp input {
-        font-family: 'Poppins', sans-serif;
-        text-align: center;
-        display: block;
-        margin: 15px auto;
-        width: 500px;
-        padding: 5px;
-        font-size: 20px;
+        margin: 50px auto;
+        height: 510px;
+        width: 90%;
+        padding: 10px;
         border-radius: 10px;
     }
 
-    .container h2 {
-        text-align: center;
+    .aboutmebox h2 {
+        font-size: 40px;
+        font-weight: 100;
     }
 
-    .container button {
-        display: block;
-        width: 103%;
-        margin: 26px auto;
+    .aboutmebox hr {
+        height: 3px;
+        width: 30%;
+        margin: 0px 0px;
+        position: absolute;
+        top: 230px;
+        border-width: 0;
+        background-color: gray;
+    }
+
+    .aboutmetext {
         font-size: 20px;
+        width: 50%;
+        margin: 20px 10px;
+        padding: 1px
+    }
+
+    .aboutmetext li {
+        padding: 10px;
+    }
+
+    .aboutmeimg {
+        position: absolute;
+        right: 250px;
+        top: 300px;
+        display: inline-block;
+        /* border: 2px solid red; */
     }
 </style>
 
@@ -159,29 +171,35 @@
                 Ask Me Anything
             </button>
         </div>
+
+        <!-- About Me Text -->
+        <div class="aboutmebox">
+            <h2> About Me </h2>
+            <hr>
+            <div class="aboutmetext">
+                Hello! My name is Utkarsh Patil. <br>
+                <!-- <br> -->
+                <li> I am student at Veermata Jijabai Technological Institute.
+                    I am currently pursuing Bachelors Degree in Information Technology. </li>
+                <!-- <br> -->
+                <li> I live in Mumbai, but my hometown is Pune. </li>
+                <!-- <br> -->
+                <li> I am extremely passionate about Coding, Video Games, Football and Anime.</li>
+                <!-- <br> -->
+                <li> I am reliable team worker, a creative person who loves trying new things, a leader who is confident
+                    about his decisions and a person with work ethics. </li>
+            </div>
+
+            <!-- About Me Image -->
+            <div class="aboutmeimg">
+                <img src="img/logo.jpg" alt="">
+            </div>
+
+        </div>
+
+
     </header>
 
-    <div class="container">
-        <h2> Quick Enquiry Form </h2>
-        <form action="noact.php">
-            <div class="form-grp">
-                <input type="text" name="" placeholder="Enter Your Name">
-            </div>
-            <div class="form-grp">
-                <input type="text" name="" placeholder="Enter Your Email ID">
-            </div>
-            <div class="form-grp">
-                <input type="text" name="" placeholder="Enter Your Phone No">
-            </div>
-            <div class="form-grp">
-                <input type="text" name="" placeholder="Enter Your Enquiry">
-            </div>
-
-        </form>
-
-        <button class="btn">
-            Submit
-        </button>
     </div>
 </body>
 
